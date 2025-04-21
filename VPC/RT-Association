@@ -2,3 +2,7 @@ resource "aws_route_table_association" "RTSub01Assocition"{
     route_table_id = aws_route_table.MyRouteTable.id
     subnet_id = aws_subnet.MySubnet01.id
 }
+resource "aws_route_table_association" "RTSub02Assocition"{
+    route_table_id = aws_route_table.MyRouteTable.id
+    subnet_id = aws_subnet.MySubnet02.id
+}
