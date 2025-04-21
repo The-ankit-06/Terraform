@@ -1,0 +1,5 @@
+provider "aws" {
+  access_key = ""        # Fill the " " with Access key
+  secret_key = ""        # Fill the " " with Secret Access key
+  region = ""
+}
