@@ -1,0 +1,6 @@
+resource "aws_route_table" "MyRouteTable" {
+    vpc_id = aws_vpc.MyVPC.id
+    tags = {
+      Name = "MyRouteTable"
+  }
+}
