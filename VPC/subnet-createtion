@@ -3,7 +3,7 @@ resource "aws_subnet" "MySubnet01" {
     cidr_block = "10.0.1.0/24"
     availability_zone = "ap-south-1a"
     tags = {
-      Name = MySubnet01
+      Name = "MySubnet01"
     }
 }
 resource "aws_subnet" "MySubnet02" {
@@ -11,6 +11,6 @@ resource "aws_subnet" "MySubnet02" {
     cidr_block = "10.0.2.0/24"
     availability_zone = "ap-south-1b"
     tags = {
-      Name = MySubnet02
+      Name = "MySubnet02"
     }
 }
