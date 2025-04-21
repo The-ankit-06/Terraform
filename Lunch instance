@@ -1,1 +1,8 @@
+resource "aws_instance" "Ani_EC2" {
+  ami = "ami-0e35ddab05955cf57"
+  instance_type = "t2.micro"
 
+  tags = {
+    Name = "My_instance"
+  }
+}
