@@ -1,0 +1,17 @@
+resource "aws_security_group" "MySecurityGroup" {
+    name = "MySecurityGroup"
+    description = "Allow Port no. 22 and 80 "
+    vpc_id = aws_vpc.MyVPC.id
+
+    ingress = {
+        description = "ssh"
+        from_port        = 22
+        cidr_block = "0.0.0.0/0"
+        to_port = 22
+    }
+    egress = {
+        from_port = 80
+        cidr_block ="0.0.0.0/0"
+        to_port = 80
+    }
+}
